@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>my note app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="notes-wrapper">
+        <div class="notes-header">
+            <div class="logo">
+                <h2>My Note App</h2>
+                <i class="fa fa-pen-to-square" id="penToSquareIcon"></i>
+                <p class="add-note" id="addNoteReveal">Create new note</p>
+            </div>
+            <div class="search">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search note..." id="searchInput" />
+            </div>
+        </div>
+
+        <div class="notes" id="fullPageDisplay">
+
+            <div class="left-scroll-div" id="halfDisplay">
+                <!-- <div class="title-para-div" id="titleParaDiv" tabindex="0">
+                    <div class="title-div">
+                        <h4>Add New Title</h4>
+                        <i class="fa fa-trash"></i>
+                    </div>
+                    <div class="para-div">
+                        <p>This is the section for housing everything i want to write in my note app.this is the
+                            section for housing everything i want to write in my note app</p>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="display-and-form-div" id="DisplayAndFormDiv">
+                <div class="dummy-display" id="dummyDisplay">
+                    <h2>Welcome! click on the icon above to create new notes...</h2>
+                </div>
+                <div class="right-scroll" id="rightScrollDiv">
+                    <!-- <div class="right-display-div" id="rightDisplayDiv">
+                        <div class="title-edit-div">
+                        <h3 class="right-display-title" id="rightDisplayTitle">Add New Title</h3>
+                        <i class="fa fa-pen"></i>
+                        </div>
+                        <p class="right-display-para" id="rightDisplayPara">This is the section for housing everything i
+                            want to write in my note app.this is the section for housing everything i want to write in
+                            my note appis the section for housing everything i want to write in my note app.this is the
+                            section for housing everything i want to write in my note app </p>
+                    </div> -->
+
+                </div>
+
+                <form id="inputDiv" class="display-form-hide">
+                    <div class="close-icon-div">
+                        <i class="fa fa-xmark" id="closeIcon"></i>
+                    </div>
+                    <label for="displayTitle" class="display-label">Enter Title</label>
+                    <textarea value="" class="display-title-div" id="displayTitle" type="text"></textarea>
+                    <label for="paraText" class="display-para">Write Note Here</label>
+                    <textarea value="" class="display-para-div" type="text" id="paraText"></textarea>
+                    <button type="submit" class="button">Add Note</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
