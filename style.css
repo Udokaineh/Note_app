@@ -10,6 +10,7 @@ body {
 
 .notes-wrapper {
     width: 70%;
+    max-width: 900px;
     height: auto;
     background-color: white;
     margin: 3rem auto;
@@ -356,11 +357,11 @@ body {
     width: 97%;
 } */
 
-@media(min-width: 360px) and (max-width: 540px) {
+@media(max-width: 540px) {
     .notes-wrapper {
         width: 100%;
-        margin: 1rem auto;
-        padding: 2rem 2rem 20rem;
+        margin: 0rem auto;
+        padding: 2rem 1rem 20rem;
     }
     .notes-header {
         /* background-color: aqua; */
@@ -371,10 +372,10 @@ body {
         row-gap: 3rem;
     }
     .logo h2 {
-      font-size: 28px;
+      font-size: 20px;
     }
     .logo i {
-        font-size: 24px;
+        font-size: 20px;
     } 
     .search {
         width: 100%;
@@ -406,5 +407,18 @@ body {
     .dummy-display {
         display: none;
     }
+}
+@media(max-width: 280px) {
+    .notes-wrapper {
+        width: 100%;
+        margin: 0rem auto;
+        padding: 2rem 0.5rem 20rem;
+    }
+    .logo h2 {
+        font-size: 16px;
+      }
+      .logo i {
+        font-size: 18px;
+    } 
 }
   
